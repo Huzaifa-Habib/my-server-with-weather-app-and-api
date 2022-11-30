@@ -10,15 +10,17 @@ app.use(cors());
 
 
 
-app.get('/weather', (req, res) => {
+app.get('/weather/:cityName', (req, res) => {
   console.log("request ip: ", req.ip);
+  console.log(req.params.cityName)
   res.send({
-      temp: "30°C",
-      wind:"7 km/h",
-      humidity: "20%",
-      minimum: "25°C",
-      maximum: "32°C" ,
-      weather:"Thunderstrom"
+    city:req.params.cityName,
+    temp: "30°C",
+    wind:"7 km/h",
+    humidity: "20%",
+    minimum: "25°C",
+    maximum: "32°C" ,
+    weather:"sunny"
 
 
 
