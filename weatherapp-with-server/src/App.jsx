@@ -3,13 +3,18 @@ import { useState} from "react";
 import moment from "moment"
 import sunny from "./assets/sunny.png"
 import './App.css';
+let baseUrl = ""
+if (window.location.href.split(":")[0] === "http") {
+  baseUrl = "http://localhost:3000";
+  
+}
 
 function App() {
   const [weatherData, setWeatherData] = useState(null)
   const [cityName, setCityName] = useState("")
 
   const getWeatherHandler = () =>{
-    axios.get(`http://localhost:3000/weather/${cityName}`)
+    axios.get(`${baseUrl}/weather/${cityName}`)
     .then(response => {
       console.log("response: ", response.data);
       setWeatherData(response.data)
