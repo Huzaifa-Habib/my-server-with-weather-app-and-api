@@ -50,6 +50,14 @@ background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, F
   margin-right: auto;
   margin-top: 5px;
   cursor: pointer;
+  background-color:#3f3f46;
+  color: white;
+  font-weight: bold;
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  border: 2px solid snow;
+  border-radius: 10px;
 
 }
 
@@ -159,6 +167,55 @@ background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, F
   .content-div{
     width: 40%;
   }
+  
+}
+
+
+@media screen and (max-width:600px){
+  .sub-div{
+    width: 90%;
+  }
+
+  .content-div{
+    width: 45%;
+  }
+
+  .main-div input{
+    width: 50%;
+  }
+  
+}
+
+
+@media screen and (max-width:450px){
+  .sub-div{
+    width: 95%;
+  }
+
+  .left-div{
+    width: 52%;
+  }
+
+  .content-div{
+    width: 50%;
+  }
+
+  .temp-div h1{
+    font-size: 30px;
+  }
+
+  .right-div{
+    font-size: 12px;
+  }
+
+  .date-div h2{
+    font-size: 18px;
+  }
+
+  .date-div p{
+    font-size: 13px;
+  }
+
   
 }
 

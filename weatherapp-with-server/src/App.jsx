@@ -5,7 +5,7 @@ import sunny from "./assets/sunny.png"
 import './App.css';
 let baseUrl = ""
 if (window.location.href.split(":")[0] === "http") {
-  baseUrl = "http://localhost:3000";
+  baseUrl = "http://localhost:3001";
   
 }
 
